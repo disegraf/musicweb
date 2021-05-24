@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToniU</title>
+</head>
+
+<body>
+    <div class="logo-mobile-version">
+        <img src="img/logo-ton.png" alt="logo" class="animate__animated animate__zoomIn">
+    </div>
+    <div class="banner-mobile-version">
+        <img src="img/girl.png" class="img-fluid" style="margin-top: -30px;">
+    </div>
+    <main>
+        <section class="principal h-100" id="principal">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 d-md-flex d-block align-items-center justify-content-center">
+
+                        <div class="music-container">
+                            <h6 class="intro-text animate__animated animate__fadeInLeft">Disfruta de mi nuevo albúm</h6>
+                            <h2 class="titulo-principal animate__animated animate__fadeInLeft">Escucha The Rubicon compralo ahora.</h3>
+                                <div class="reproductor-musica animate__animated animate__fadeInLeft">
+                                    <div class="progress-bar-music"><span id="progress-bar-music"></span></div>
+                                    <button type="button" class="btn_reproductor" id="btn-anterior"
+                                        onclick="anteriorCancion()">
+                                        <i class="fas fa-fast-backward"></i>
+                                    </button>
+                                    <button type="button" class="btn_reproductor" id="btn-play"
+                                        onclick="reproducirCancion()">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <button type="button" class="btn_reproductor" id="btn-pause" style="display: none;"
+                                        onclick="pausarCancion()">
+                                        <i class="fas fa-pause"></i>
+                                    </button>
+                                    <button type="button" class="btn_reproductor" id="btn-siguiente"
+                                        onclick="siguienteCancion()">
+                                        <i class="fas fa-fast-forward"></i>
+                                    </button>
+                                    <div class="title-song" id="info-song">
+                                        <p class="m-0 fw-bold">Song Meet & Fun!</p>
+                                        <span>02:08 / 00:00</span>
+                                    </div>
+                                </div>
+                                <div class="item-canales animate__animated animate__fadeInLeft">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_applemusic_onlight.svg" alt="applemusic">
+                                                <button type="button" class="btn-dark"> Escuchar </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_spotify_onlight.svg" alt="spotify">
+                                                <button type="button" class="btn-dark"> Escuchar </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_amazonmusicstreaming_onlight.svg" alt="amazon">
+                                                <button type="button" class="btn-dark"> Escuchar </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_youtube_onlight.svg" alt="youtube">
+                                                <button type="button" class="btn-dark"> Visitar </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_itunes_onlight.svg" alt="itunes">
+                                                <button type="button" class="btn-dark"> Descargar </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_deezer_onlight.svg" alt="deezer">
+                                                <button type="button" class="btn-dark"> Escuchar </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/logo_tidal_onlight.svg" alt="tidal">
+                                                <button type="button" class="btn-dark"> Escuchar </button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="redes-sociales  animate__animated animate__fadeIn">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/tik-tok.png" alt="facebook" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/instagram.png" alt="facebook" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/facebook.png" alt="facebook" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/twitter.png" alt="facebook" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/logo-ton.png" alt="logo" class="logo-principal animate__animated animate__fadeInUp">
+        </section>
+    </main>
+
+    <!-- canciones -->
+    <audio src="music/1.mp3" data-titulo="Song Meet & Fun!"></audio>
+    <audio src="music/2.mp3" data-titulo="Snake on the Beach"></audio>
+    <!-- canciones -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let cancionActual = 0;
+        let canciones = document.getElementsByTagName("audio");
+
+        const botonPlay = document.getElementById("btn-play");
+        const botonPause = document.getElementById("btn-pause");
+        const botonSiguiente = document.getElementById("btn-siguiente");
+        const botonAnterior = document.getElementById("btn-anterior");
+        const informacionMusica = document.getElementById("info-song");
+        const barraProgreso = document.getElementById("progress-bar-music");
+
+        function reproducirCancion() {
+            botonPlay.style.display = "none";
+            botonPause.style.display = "block";
+            canciones[cancionActual].play();
+
+        }
+
+        function pausarCancion() {
+            botonPlay.style.display = "block";
+            botonPause.style.display = "none";
+
+            canciones[cancionActual].pause();
+        }
+
+        function siguienteCancion() {
+            canciones[cancionActual].pause();
+            canciones[cancionActual].currentTime = 0;
+
+            botonPlay.style.display = "block";
+            botonPause.style.display = "none";
+
+            if (cancionActual == (canciones.length - 1)) {
+                cancionActual = 0;
+            }
+            else {
+                cancionActual++;
+            }
+
+            reproducirCancion();
+        }
+        function anteriorCancion() {
+            canciones[cancionActual].pause();
+            canciones[cancionActual].currentTime = 0;
+
+            botonPlay.style.display = "block";
+            botonPause.style.display = "none";
+
+            if (cancionActual == 0) {
+                cancionActual = (canciones.length - 1);
+            }
+            else {
+                cancionActual--;
+            }
+
+            reproducirCancion();
+        }
+
+        function mientrasReproduceCancion(cual) {
+            informacionMusica.getElementsByTagName("p")[0].innerHTML = canciones[cual].getAttribute("data-titulo");
+            informacionMusica.getElementsByTagName("span")[0].innerHTML = formatearMinutos(canciones[cual].duration) + " / " + formatearMinutos(canciones[cual].currentTime);
+            let porcentaje = (canciones[cual].currentTime / canciones[cual].duration) * 100;
+            barraProgreso.style.width = porcentaje + "%";
+        }
+
+        for (let i = 0; i < canciones.length; i++) {
+            canciones[i].ontimeupdate = function () { mientrasReproduceCancion(i) };
+        }
+
+
+
+        function formatearMinutos(numero) {
+            var minutes = parseInt(numero / 60);
+            var seconds = parseInt(numero % 60);
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            return minutes + ":" + seconds;
+        }
+
+        //canciones[0].ontimeupdate = function() {  };
+
+        //console.log(list.length);
+    </script>
+
+</body>
+
+</html>
